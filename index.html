@@ -33,13 +33,21 @@
   <a href="http://jp-tyo-dvm.sakurafrp.com:22323/New-Website/index.html"style="color:#3794FF;text-decoration:none;">元欢科技</a>
 <p>幕后帮助：</br></p>
 <b><p>luo小黑</p></b>
-<a href="https://kevinguo087.gitee.io/old_version/">
-    <script>
-function myFunction() {
-  alert("即将切换到旧版，出现一切问题概不负责！");
+<div id='jump' style="width: 200px;height: 100px;background:#ededed;position:absolute;top:100px;left:50%;text-align:center;border:1px solid #fefefe;">
+	<p>将在<span id='box'></span>秒后自动跳转到新页面</p>
+	<button onclick="window.location.href='https://kevinguo087.gitee.io/old_version/'">确定</button>
+	<button onclick="clearInterval(t2);document.getElementById('jump').style.display='none'">取消</button>
+</div>
+<script>
+window.onload = function(){ //设置当页面加载时执行
+var btn =document.getElementsByTagName("button")[] //获取btn元素
+btn.onclick = function(){ //给button加上一个点击事件
+var answer = confirm("如果切换到旧版后引起了各种问题，本站概不负责") //把确认框赋值给answer
+if(answer) //判断是否点击确定
+window.location ="https://kevinguo087.gitee.io/old_version/" //确定的话游览器自身跳转
+}
 }
 </script>
-    <button>切换到旧版</button>
-</a>
+<button>切换到旧版</button>
 </body>
 </html>
