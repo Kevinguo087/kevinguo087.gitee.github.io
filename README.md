@@ -4,4 +4,4 @@
 如果想把我的当做模板，请联系邮件
 `abai08@qq.com`
 ____________
-网址：https://kevinguo087.github.io/Kevinguo.github.io/
+网址：https://kevinguo087.gitee.io/kevinguo.github.io/
